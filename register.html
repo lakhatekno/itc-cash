@@ -10,7 +10,7 @@
 </head>
 <body class="center bg-gray">
     <div class="box-770 column bg-white">
-        <form action="" class="full-width column mb-20px">
+        <form action="" class="full-width column" id="signupForm">
             <h1 class="green">Create Account</h1>
             <p class="mb-20px">Please enter the details in the below to continue.</p>
 
@@ -25,25 +25,49 @@
             <div class="mb-12px inline full-width space-between" style="gap: 12px;">
                 <div class="column full-width">
                     <label for="pass" class="green fw-600 mb-8px">Password</label>
-                    <input type="password" name="pass" class="bg-gray" id="pass" placeholder="Type your password">
+                    <div class="password">
+                        <input type="password" name="pass" class="bg-gray" id="pass" placeholder="Type your password">
+                        <div class="eye hover">
+                            <img src="assets/img/eye.svg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="column full-width">
                     <label for="pass2" class="green fw-600 mb-8px">Confirm Password</label>
-                    <input type="password" name="pass2" class="bg-gray" id="pass2" placeholder="Re-type your password">
+                    <div class="password">
+                        <input type="password" name="pass2" class="bg-gray" id="pass2" placeholder="Re-type your password">
+                        <div class="eye hover">
+                            <img src="assets/img/eye.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mb-12px column">
-                <label for="division" class="green fw-600 mb-8px">Division</label>
-
+            <div class="column" style="margin-bottom: 40px;">
+                <label for="divisionDropdown" class="green fw-600 mb-8px">Division</label>
+                <div class="password hover" id="divisionDropdown" style="width: fit-content;" >
+                    <div class="bg-green white division-dropdown" id="divisionDropdown_c">
+                        choose your division
+                    </div>
+                    <div class="down" id="arrow">
+                        <img src="assets/img/down.svg">
+                    </div>
+                    <div class="bg-gray dropdown-content" id="dropdownCon">
+                        <div class="dropdown-list">Public Relation</div>
+                        <div class="dropdown-list">Mobile</div>
+                        <div class="dropdown-list">Web</div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-20px">
+            <div class="mb-20px hover">
                 <input class="bg-green white fw-600" type="submit" name="" id="signup" value="Sign Up">
             </div>
         </form>
         <div class="full-width center mb-20px">
             <p>Already Have an account?</p>
-            <p><a href="" class="green fw-600" id="sign_up">Sign In</a></p>
+            <p><a href="" class="green fw-600 hover" id="sign_up">Sign In</a></p>
         </div>
-    </div>        
+    </div>
+    
+    <script src="js/dropdown.js"></script>
 </body>
 </html>

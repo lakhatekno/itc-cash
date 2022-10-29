@@ -31,12 +31,14 @@ p {
 
 .box {
     width: 810px;
+    margin: 40px;
     padding: 20px;
     border-radius: 20px;
 }
 
 .box-770 {
     width: 770px;
+    margin: 40px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -90,6 +92,10 @@ form {
     font-weight: 600;
 }
 
+.hover :hover {
+    cursor: pointer;
+}
+
 input[type="email"], input[type="password"],
 input[type="submit"], input[type="text"] {
     width: 100%;
@@ -97,6 +103,65 @@ input[type="submit"], input[type="text"] {
     padding: 16px 12px;
     border-radius: 10px;
 }
+
+select {
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+/*----- start dropdown division (register page) -----*/
+.division-dropdown {
+    width: 240px;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+.active-dropdown {
+    width: 320px;
+}
+
+.active-arrow {
+    transform: rotate(180deg);
+}
+
+.down {
+    width: fit-content;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 99;
+}
+
+#divisionDropdown .dropdown-content {
+    /* border: 1px solid red; */
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    background-color: var(--green);
+}
+
+#divisionDropdown .show {
+    display: block;
+    opacity: 1;
+    width: 320px;
+    height: 132px;
+    background-color: var(--gray);
+    overflow: hidden;
+}
+
+.dropdown-list {
+    display: block;
+    position: sticky;
+    width: 320px;
+    height: fit-content;
+    padding: 10px 16px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+/*----- end dropdown division (register page) -----*/
 
 input[type="submit"] {
     padding: 10px;
@@ -109,6 +174,30 @@ input[type="checkbox"] {
     height: 20px;
     margin-right: 5px;
 }
+
+input::placeholder {
+    font-size: 14px;
+}
+
+#signupForm input::placeholder {
+    font-size: 12px;
+}
+
+/*----- start password hidden/show lab section -----*/
+.password {
+    position: relative;
+}
+
+.eye {
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+}
+
+/*----- end password hidden/show lab section -----*/
 
 /* ----- start custom cb lab -----*/
 /* thanks to w3schools */
@@ -126,7 +215,6 @@ input[type="checkbox"] {
     height: 20px;
     background-color: var(--gray);
     border-radius: 4px;
-    /* cursor: pointer; */
     overflow: hidden;
 }
 
