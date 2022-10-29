@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --green: #01575C;
+    --white: #fff;
+    --gray: rgba(140, 140, 140, 0.1);
+    --red: rgb(220, 1, 1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.white { color: var(--white); }
+.green { color: var(--green); }
+.gray { color: var(--gray); }
+.red { color: var(--red); }
+.bg-white { background-color: var(--white); }
+.bg-green { background-color: var(--green); }
+.bg-gray { background-color: var(--gray); }
+.bg-red { background-color: var(--red); }
+
+body {
+    background-color: var(--gray);
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.box {
+    width: 810px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box-770 {
+    width: 770px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.inline {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    width: 580px;
+    padding: 20px;
+}
+
+.mb-8px {
+    margin-bottom: 8px;
+}
+
+.mb-12px {
+    margin-bottom: 12px;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+input[type="email"], input[type="password"],
+input[type="submit"], input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* ----- start custom cb lab -----*/
+/* thanks to w3schools */
+.cb input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.checkmark {
+    position: relative;
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    /* cursor: pointer; */
+    overflow: hidden;
+}
+
+.cb input[type="checkbox"]:checked ~ .checkmark {
+    background-color: var(--green);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.cb input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+.cb .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*----- end custom cb lab -----*/
+
+#sign_up {
+    margin-left: 8px;
+}
+
+#logo_itc {
+    width: 150px;
+    height: fit-content;
+}
+
+#signin_method {
+    border-top: 1px solid rgba(140, 140, 140, 1);
+    color: rgba(140, 140, 140, 1);
+}
+
+#signin_method p {
+    /* position: relative; */
+    margin-top: -10px;
+    background-color: var(--white);
+    padding: 0 9px;
+}
+
+#signin_method a {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
