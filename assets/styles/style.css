@@ -138,11 +138,10 @@ select {
     top: 12px;
     right: 10px;
     z-index: 99;
-    /* background-color: blue; */
 }
 
 .division-dropdown-content {
-    /* border: 1px solid red; */
+    visibility: hidden;
     opacity: 0;
     width: 0;
     height: 0;
@@ -151,7 +150,7 @@ select {
 }
 
 .dd-show {
-    display: block;
+    visibility: visible;
     opacity: 1;
     width: 320px;
     height: 132px;
