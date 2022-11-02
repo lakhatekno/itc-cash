@@ -6,6 +6,7 @@
     --gray: #EAEAEA;
     --gray-l: rgba(140, 140, 140, 0.1);
     --red: rgb(220, 1, 1);
+    --yellow: #E2F4C2;
 }
 
 * {
@@ -16,14 +17,32 @@
 .green { color: var(--green); }
 .gray { color: var(--gray); }
 .red { color: var(--red); }
+.yellow { color: var(--yellow); }
 .bg-white { background-color: var(--white); }
 .bg-green { background-color: var(--green); }
 .bg-gray { background-color: var(--gray); }
 .bg-gray-l { background-color: var(--gray-l); }
 .bg-red { background-color: var(--red); }
+.bg-yellow { background-color: var(--yellow); }
 
 body {
     background-color: var(--gray);
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 8px 20px;
 }
 
 p {
@@ -67,8 +86,15 @@ p {
     justify-content: space-between;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
 .items-center {
-    display: flex;
     align-items: center;
 }
 
@@ -89,8 +115,16 @@ form {
     margin-bottom: 20px;
 }
 
+.fw-500 {
+    font-weight: 500;
+}
+
 .fw-600 {
     font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
 }
 
 .hover :hover {
@@ -274,4 +308,32 @@ input::placeholder {
     margin: 10px;
     margin-bottom: 0;
 }
+
+/*----- start navbar customization -----*/
+nav h1 {
+    margin-left: 25.21px;
+}
+
+nav h2 {
+    font-size: 16px;
+}
+
+nav h3 {
+    font-size: 14px;
+}
+
+.user-detail {
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.profile-pict {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    overflow: hidden;
+}
+/*----- end navbar customization -----*/
 
